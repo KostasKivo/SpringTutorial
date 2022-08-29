@@ -11,7 +11,7 @@ public class HelloSpringApp {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
 		//retrieve bean from container
-		SwimmingCoach theCoach = context.getBean("swimmingCoach", SwimmingCoach.class);
+		SwimmingCoach theCoach = context.getBean("randomFortuneCoach", SwimmingCoach.class);
 		
 		//call methods of bean
 		System.out.println(theCoach.getDailyWorkout());

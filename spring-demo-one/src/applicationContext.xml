@@ -25,7 +25,7 @@
     	class="kostaskivo.com.github.RandomFortuneService">
     </bean>
     
-    <bean id="swimmingCoach"
+    <bean id="randomFortuneCoach"
     	class="kostaskivo.com.github.SwimmingCoach">
     	<!-- Setting up the constructor dependency -->
     	<constructor-arg ref="randomFortune"/>
