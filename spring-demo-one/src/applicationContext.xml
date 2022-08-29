@@ -6,11 +6,43 @@
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- Load the properties file: sport.properties -->
+    <context:property-placeholder location="classpath:sport.properties"/>
 
     <!-- Define your beans here -->
+    <bean id="myFortune"
+    	class="kostaskivo.com.github.HappyFortuneService">
+    </bean>
+    
     <bean id="myCoach"
     	class="kostaskivo.com.github.SwimmingCoach">
+    	<!-- Setting up the constructor dependency -->
+    	<constructor-arg ref="myFortune"/>
     </bean>
+    
+    <bean id="randomFortune"
+    	class="kostaskivo.com.github.RandomFortuneService">
+    </bean>
+    
+    <bean id="swimmingCoach"
+    	class="kostaskivo.com.github.SwimmingCoach">
+    	<!-- Setting up the constructor dependency -->
+    	<constructor-arg ref="randomFortune"/>
+    </bean>
+    
+    
+    <bean id="CricketCoach"
+    	class="kostaskivo.com.github.CricketCoach">
+    	<!-- Setting up the setter dependency -->
+    	<!-- name="fortuneService" will call cricketCoach setFortuneService  -->
+    	<property name="fortuneService" ref="myFortune" />
+    	<!-- Inject literal values -->
+    	<property name="emailAddress" value="${foo.email}"/>
+    	<property name="team" value="${foo.team}"/>
+    </bean>
+    
+    
     
 </beans>
 

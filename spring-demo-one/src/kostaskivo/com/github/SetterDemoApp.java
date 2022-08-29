@@ -2,24 +2,28 @@ package kostaskivo.com.github;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class HelloSpringApp {
+public class SetterDemoApp {
 
-	// Inversion of Control and setting up the bean example
 	public static void main(String[] args) {
 		
 		//load the spring configuration file
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
-		
+				
 		//retrieve bean from container
-		SwimmingCoach theCoach = context.getBean("swimmingCoach", SwimmingCoach.class);
-		
+		CricketCoach theCoach = context.getBean("CricketCoach", CricketCoach.class);
+				
 		//call methods of bean
 		System.out.println(theCoach.getDailyWorkout());
-		
+				
 		System.out.println(theCoach.getDailyFortune());
 		
+		System.out.println(theCoach.getEmailAddress());
+		
+		System.out.println(theCoach.getTeam());
+				
 		//close context
 		context.close();
+
 	}
 
 }

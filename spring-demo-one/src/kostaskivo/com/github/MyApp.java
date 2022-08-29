@@ -4,9 +4,9 @@ public class MyApp {
 
 	public static void main(String[] args) {
 		
-		ICoach theCoach = new SwimmingCoach();
+		//ICoach theCoach = new SwimmingCoach();
 		
-		System.out.println(theCoach.getDailyWorkout());
+		//System.out.println(theCoach.getDailyWorkout());
 
 	}
 
