@@ -1,0 +1,4 @@
+.metadata
+Servers
+/spring-demo-one/*
+!/spring-demo-one/src
