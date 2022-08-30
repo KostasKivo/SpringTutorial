@@ -217,21 +217,23 @@
     <br>
   </div>
 
+  <h2>6. Bean Scopes and Lifecycle methods</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Scope of beans</h3>
+    <p>By default the scope of the beans is Singleton, so a bean with Singleton scope is shared and cached in memory</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development process - After initialization and before destroy annotations</h3>
+    <p>@PostConstruct and @PreDestroy annotation</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Tip on prototype beans</h3>
+    <p>Prototype beans are not calling the @PreDestroy annotation because the container hands them and then doesn't handle them at all. We have to destoy them manually.</p>
     <br>
   </div>
 
