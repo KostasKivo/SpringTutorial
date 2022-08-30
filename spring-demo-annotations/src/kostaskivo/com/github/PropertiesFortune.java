@@ -21,15 +21,15 @@ public class PropertiesFortune implements FortuneService {
 		return arr[r.nextInt(arr.length)];
 	}
 	
-	@PostConstruct
-	public void readProperties() {
-		for(String s:arr)
-			System.out.println(s);
-	}
+//	@PostConstruct
+//	public void readProperties() {
+//		for(String s:arr)
+//			System.out.println(s);
+//	}
 	
-	@PreDestroy
-	public void deleteBean() {
-		System.out.println("All of the properties (should) have been read");
-	}
+//	@PreDestroy
+//	public void deleteBean() {
+//		System.out.println("All of the properties (should) have been read");
+//	}
 
 }

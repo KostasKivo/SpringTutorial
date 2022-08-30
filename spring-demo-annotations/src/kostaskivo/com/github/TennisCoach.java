@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 	
 	@Autowired
-	@Qualifier("propertiesFortune")
+	@Qualifier("databaseFortuneService")
 	private FortuneService fortuneService;
 	
 	

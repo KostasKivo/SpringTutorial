@@ -4,6 +4,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BananaCoach implements Coach {
+	
+	public FortuneService sadFortuneService;
+	
+	public BananaCoach(FortuneService sadFortuneService) {
+		this.sadFortuneService = sadFortuneService;
+	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -12,8 +18,7 @@ public class BananaCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return sadFortuneService.getFortune();
 	}
 
 }
