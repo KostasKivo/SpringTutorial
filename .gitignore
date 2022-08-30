@@ -2,3 +2,5 @@
 Servers
 /spring-demo-one/*
 !/spring-demo-one/src
+/spring-demo-annotations/*
+!/spring-demo-annotations/src
