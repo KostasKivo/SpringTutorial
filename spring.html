@@ -166,51 +166,54 @@
     <br>
   </div>
 
+  <h2>5. Dependency Injection with Annotation config</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring autowiring</h3>
+    <p>When we want to inject a dependency Spring will scan @Components and if any class does, it will inject it automatically (autowire) </p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Autowiring injection types</h3>
+    <p>1. Constructor injection <br> 2. Setter Injection (or any method in general is the same) <br> 3.Field Injections</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development process - Constructor Injection</h3>
+    <p>1. Define the dependency interface and class <br> 2. Create a constructor in your class for injections <br> 3. Configure the dependency injection with @Autowired annotation</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development process - Setter Injection</h3>
+    <p>1. Create setter methods in class for injections <br> 2. Configure the dependecy injection with @Autowired annotation</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development process - Field Injection</h3>
+    <p>1. Configure the dependency injection with Autowired annotation</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Qualifier annotation</h3>
+    <p>When there are a lot of beans to @Autowired and we haven't specify which one to use we get an exception.
+      We solve this problem using the @Qualifier("") annotation and choosing which bean we want to use</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Using qualifier inside constructor</h3>
+    <p>Using the @Qualifier annotation inside a constructor has a different syntax than usual, so keep that in mind</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Injecting values from properties file</h3>
+    <p>We have set the properties file path inside our xml file</p>
     <br>
   </div>
 

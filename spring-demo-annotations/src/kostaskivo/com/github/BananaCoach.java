@@ -10,4 +10,10 @@ public class BananaCoach implements Coach {
 		return "Let's do some banana practice";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

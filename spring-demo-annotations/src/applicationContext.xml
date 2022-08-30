@@ -9,6 +9,8 @@
     
 	<!-- Add entry to enable component scanning -->
 	<context:component-scan base-package="kostaskivo.com.github"/>
+	
+	 <context:property-placeholder location="classpath:fortune.properties"/> 
   
 </beans>
 
