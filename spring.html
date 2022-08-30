@@ -23,7 +23,7 @@
 
   <h1>Spring concepts</h1>
 
-  <h2>1. Inversion of Control</h2>
+  <h2>1. Inversion of Control XML config</h2>
 
   <div class="container">
     <h3>Inversion of Control (IoC)</h3>
@@ -59,7 +59,7 @@
     <br>
   </div>
 
-  <h2>2. Dependency Injection</h2>
+  <h2>2. Dependency Injection XML config</h2>
 
   <div class="container">
     <h3>Dependency Injection</h3>
@@ -106,33 +106,36 @@
     <br>
   </div>
 
+  <h2>3. The beans lifecycle</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Scope of a bean</h3>
+    <p>The default scope of a bean is Singleton. Singleton means that only one bean object will be created
+      and it will be shared across all variables that may want to use it.</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Different type of bean scopes</h3>
+    <p>There are different type of bean scopes which can be declared with the scope="" configuration inside the bean xml declaration</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Bean lifecycle Methods / Hooks </h3>
+    <p>You can add custom code during bean initialization / destruction with the init-method="" and destroy-method=""</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development process for setting up custom Methods / Hooks</h3>
+    <p>1. Define your methods for init and destroy <br> 2. Configure the method names in Spring config file</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Lifecycle of Prototype scope</h3>
+    <p>Spring does not manage the complete lifecycle of a Prototype bean as destruction callbacks are not called</p>
     <br>
   </div>
 

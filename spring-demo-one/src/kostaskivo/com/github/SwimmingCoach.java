@@ -21,5 +21,13 @@ public class SwimmingCoach implements ICoach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	public void doingStartupStuff() {
+		System.out.println("SwimmingCoach: Doing startup stuff");
+	}
+	
+	public void doingCleanupStuff() {
+		System.out.println("SwimmingCoach: Doing cleanup stuff");
+	}
 
 }
