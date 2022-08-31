@@ -6,6 +6,6 @@
   </head>
   <body>
     <h2>Spring MVC demo</h2>
-    <a href="showForm">Click here</a>
+    <a href="silly/showForm">Click here</a>
   </body>
 </html>
