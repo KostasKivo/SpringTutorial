@@ -271,63 +271,68 @@
     <br>
   </div>
 
+  <h2>8. Spring MVC</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What is Spring MVC</h3>
+    <p>It's a framework for building web application in Java based on the Model View Controller pattern. It has features of Core Spring Framework like IoC and DI</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Components of Spring MVC application</h3>
+    <p>1. A set of web pages to layout UI components <br>2. A collection of Spring beans(controllers,services,etc) <br>3. Spring configuration(XML, Annotations or Java)</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring MVC Front Controller</h3>
+    <p>Browser gives requests to Front Controller or DispatcherServlet which is already developed by the Spring team</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring MVC flow</h3>
+    <p>Browser sends information to Front Controller -> a model is sent from Front Controller to Controller and then another model is sent to View Template from Controller. Finally View Template sends information back to Web Browser
+    . The model contains data the View Template is the JSP page and Controller contains the business logic ( handle the request, store/retrieve data)</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Common view templates</h3>
+    <p>Most common ones are JSP and JSTL but there are a lot more</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>WEB-INF/lib</h3>
+    <p>WEB-INF/lib is a special directory, any jar files that are added there are configured manually so there is no need to configure the Build path</p>
+    <br>
+  </div>
+
+  <h2>8. Creating Controllers and Views</h2>
+
+  <div class="container">
+    <h3>Development Process</h3>
+    <p>1. Create Controller class <br> 2. Define Controller method <br> 3.Add Request Mapping to Controller method <br>4. Return View Name <br>5. Develop View Page</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring MVC annotations</h3>
+    <p>@Controller defines a Controller class and @RequestMapping("/") attaches the specified path to a method</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Read form fields</h3>
+    <p>You can read form field variables in .jsp files using ${param.} and after the dot the name of the form field you want to read</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
-    <br>
-  </div>
-
-  <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring Model</h3>
+    <p>The model is a container for your application data. In your controller you can put anything in the model. View page (jsp) can access data from the model</p>
     <br>
   </div>
 

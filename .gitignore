@@ -4,3 +4,8 @@ Servers
 !/spring-demo-one/src
 /spring-demo-annotations/*
 !/spring-demo-annotations/src
+/SpringMVCDemo/*
+!/SpringMVCDemo/src
+!/SpringMVCDemo/WebContent
+/SpringMVCDemo/WebContent/META-INF
+/SpringMVCDemo/WebContent/WEB-INF/lib
