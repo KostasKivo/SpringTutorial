@@ -350,21 +350,39 @@
     <br>
   </div>
 
+  <h2>10. Spring MVC form tags and Data Binding</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Why use form tags?</h3>
+    <p>Form tags will generate HTML for us and allow data binding</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>How to reference Spring MVC Form tags</h3>
+    <p>Specify the Spring namespace at beginning of JSP file</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What happens behind the scenes</h3>
+    <p>In this code <br>
+      <p>
+        <form:form action="processForm" modelAttribute="student">
+      	First name: <form:input path="firstName"/>
+      	<br><br>
+      	Last name: <form:input path="lastName"/>
+      	<br><br>
+      	<input type="submit" value="Submit"/>
+      </form:form>
+    </p>
+      We are giving as modelAttribute the object student that we added to the model. When the form is loaded
+      Spring MVC will call student.getFirstName() and student.getLastName(). When the form is submitted Spring MVC
+      will call student.setFirstName() and student.setLastName() so the path attributes are the field of the object.
+
+      <br>
+       The /processForm path in the StudentController will use the @ModelAttribute("student") annotation. 
+  </p>
     <br>
   </div>
 
