@@ -381,26 +381,31 @@
       will call student.setFirstName() and student.setLastName() so the path attributes are the field of the object.
 
       <br>
-       The /processForm path in the StudentController will use the @ModelAttribute("student") annotation. 
+       The /processForm path in the StudentController will use the @ModelAttribute("student") annotation.
   </p>
     <br>
   </div>
 
+  <h2>11. Spring MVC form validation</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Development Process</h3>
+    <p>1. Add validation rule to Customer class <br> 2. Display error messages on HTML form <br>3. Perform validation in the Controller class <br>4.Update confirmation page</p>
+     <br>
+  </div>
+
+  <div class="container">
+    <h3>Validation annotations</h3>
+    <p>If a field requires validation we use the @NotNull so that field is not null and if it is the string inside message will be displayed.
+        Also @Size(min=1,"message="") sets the minimum input for the field to one char. Finally inside the jsp file we need to add the tag form:errors and set it accordingly.
+        The @Valid tag tells Spring to validate the object.
+    </p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
-    <br>
-  </div>
-
-  <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>InitBinder annotation</h3>
+    <p>@InitBinder will pre process all requests that come to our controller</p>
     <br>
   </div>
 
