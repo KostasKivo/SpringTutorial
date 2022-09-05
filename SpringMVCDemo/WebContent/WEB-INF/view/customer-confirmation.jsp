@@ -11,6 +11,8 @@
 <body>
 
 	The customer is confirmed: ${ customer.firstName } ${ customer.lastName } ${ customer.freePasses } ${ customer.postalCode }
+	
+	 ${ customer.courseCode }
 
 </body>
 
