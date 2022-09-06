@@ -437,57 +437,60 @@
     <br>
   </div>
 
+  <h2>14. Hibernate</h2>
+
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What is Hibernate?</h3>
+    <p>A framework for persisting/saving java objects in a database</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Object-To-Relational Mapping (ORM)</h3>
+    <p>The developer defines mapping between Java class and database table</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Hibernate and JDBC</h3>
+    <p>Hibernate uses JDBC and it's another layer of abstraction on top of the Java Database Connectivity API </p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Hibernate dev process</h3>
+    <p>1. Add Hibernate Config file <br> 2. Annotate Java Class <br> 3. Develop Java Code to perform database operations</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Hibernate Entity Class</h3>
+    <p>In hibernate an entity class is a Java class that is mapped to a database table. We use annotations to map it </p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Two options for mapping the entity class</h3>
+    <p>1. XML config file (legacy) <br> 2. Java Annotations(modern,preferred )</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Key players</h3>
+    <p>1. SessionFactory is a Singleton object, it reads the hibernate config file and creates session objects. <br>2.Session wraps a JDBC connection, it's used to save/retrieve objects. It is short lived and retrieved from the SessionFactory </p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>How to map with Java annotations?</h3>
+    <p>1. Map class to database table <br> 2. Map fields to database columns</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Hibernate primary key</h3>
+    <p>A field with the annotation of @Id will be mapped as the primary key of the table.
+    With the @GeneratedValue() annotation we can select a strategy for our primary key</p>
     <br>
   </div>
 
