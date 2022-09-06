@@ -9,3 +9,5 @@ Servers
 !/SpringMVCDemo/WebContent
 /SpringMVCDemo/WebContent/META-INF
 /SpringMVCDemo/WebContent/WEB-INF/lib
+/HibernateTutorial/*
+!/HibernateTutorial/src
