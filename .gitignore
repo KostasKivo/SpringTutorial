@@ -7,7 +7,8 @@ Servers
 /SpringMVCDemo/*
 !/SpringMVCDemo/src
 !/SpringMVCDemo/WebContent
-/SpringMVCDemo/WebContent/META-INF
-/SpringMVCDemo/WebContent/WEB-INF/lib
+/SpringMVCDemo/WebContent/
 /HibernateTutorial/*
 !/HibernateTutorial/src
+/Hibernate-One-to-One/*
+!/Hibernate-One-to-One/src
