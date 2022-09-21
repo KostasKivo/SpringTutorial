@@ -12,3 +12,5 @@ Servers
 !/HibernateTutorial/src
 /Hibernate-One-to-One/*
 !/Hibernate-One-to-One/src
+/Hibernate-One-to-Many/*
+!/Hibernate-One-to-Many/src
