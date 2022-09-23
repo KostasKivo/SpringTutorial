@@ -16,3 +16,5 @@ Servers
 !/Hibernate-One-to-Many/src
 /Hibernate-One-to-Many-Unidirectional/*
 !/Hibernate-One-to-Many-Unidirectional/src
+/Hibernate-Many-to-Many/*
+!/Hibernate-Many-to-Many/src
