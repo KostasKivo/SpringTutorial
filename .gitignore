@@ -18,3 +18,5 @@ Servers
 !/Hibernate-One-to-Many-Unidirectional/src
 /Hibernate-Many-to-Many/*
 !/Hibernate-Many-to-Many/src
+/web-customer-tracker/*
+!/web-customer-tracker/src
