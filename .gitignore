@@ -20,3 +20,5 @@ Servers
 !/Hibernate-Many-to-Many/src
 /web-customer-tracker/*
 !/web-customer-tracker/src
+/spring-demo-aop/*
+!/spring-demo-aop/src
