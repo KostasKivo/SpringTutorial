@@ -1,5 +1,7 @@
 package com.kostaskivo.aop.demo;
 
+import java.util.List;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.kostaskivo.aop.demo.dao.AccountDAO;
@@ -15,11 +17,9 @@ public class MainDemoApp {
 		
 		//get bean from spring container
 		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
-		MembershipDAO theMembershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
 		
-		//call the business method
-		theAccountDAO.addAccount(new Account());
-		theMembershipDAO.addAccount();
+		
+		List<Account> list = theAccountDAO.findAccounts();
 		
 		//close context
 		context.close();
