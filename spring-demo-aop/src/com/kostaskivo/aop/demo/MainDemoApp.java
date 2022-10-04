@@ -6,6 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import com.kostaskivo.aop.demo.dao.AccountDAO;
 import com.kostaskivo.aop.demo.dao.MembershipDAO;
+import com.kostaskivo.aop.service.TrafficFortuneService;
 
 public class MainDemoApp {
 
@@ -16,14 +17,18 @@ public class MainDemoApp {
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
 		
 		//get bean from spring container
-		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
+		//AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
+		TrafficFortuneService theFortuneService = context.getBean("trafficFortuneService", TrafficFortuneService.class);
 		
+//		try {
+//			List<Account> list = theAccountDAO.findAccounts();
+//		} catch (Exception e) {
+//			System.out.println("Inside catch block");
+//		}
 		
-		try {
-			List<Account> list = theAccountDAO.findAccounts();
-		} catch (Exception e) {
-			System.out.println("Inside catch block");
-		}
+		String data = theFortuneService.getFortune();
+		
+		System.out.println(data);
 		
 		
 		//close context
