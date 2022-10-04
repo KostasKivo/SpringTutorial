@@ -3,6 +3,7 @@ package com.kostaskivo.aop.demo.aspect;
 import java.util.List;
 
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
@@ -38,6 +39,11 @@ public class MyDemoLoggingAspect {
 			)
 	public void afterThrowingFindAccountsAdvice(Exception exception) {
 		System.out.println("Inside the afterThrowing advice" + exception);
+	}
+	
+	@After("execution(* com.kostaskivo.aop.demo.dao.AccountDAO.findAccounts(..))")
+	public void afterFinallyFindAccountsAdvice() {
+		System.out.println("Finally advice for findAccounts");
 	}
 
 }
