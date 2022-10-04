@@ -19,7 +19,12 @@ public class MainDemoApp {
 		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 		
 		
-		List<Account> list = theAccountDAO.findAccounts();
+		try {
+			List<Account> list = theAccountDAO.findAccounts();
+		} catch (Exception e) {
+			System.out.println("Inside catch block");
+		}
+		
 		
 		//close context
 		context.close();

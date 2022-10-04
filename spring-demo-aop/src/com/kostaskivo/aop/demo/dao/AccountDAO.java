@@ -14,7 +14,7 @@ public class AccountDAO {
 		System.out.println(getClass() + " addAccount is running");
 	}
 	
-	public List<Account> findAccounts() {
+	public List<Account> findAccounts() throws Exception {
 		
 		List<Account> list = new ArrayList<Account>();
 		
@@ -22,6 +22,8 @@ public class AccountDAO {
 		list.add(new Account("Kyriakos","Mpakos"));
 		list.add(new Account("Bananas","Tray"));
 		
-		return list;
+		throw new Exception();
+		
+		//return list;
 	}
 }

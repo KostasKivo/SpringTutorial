@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -31,6 +32,12 @@ public class MyDemoLoggingAspect {
 		System.out.println(result);
 	}
 	
-	
+	@AfterThrowing(
+			pointcut = "execution(* com.kostaskivo.aop.demo.dao.AccountDAO.findAccounts(..))",
+			throwing = "exception"
+			)
+	public void afterThrowingFindAccountsAdvice(Exception exception) {
+		System.out.println("Inside the afterThrowing advice" + exception);
+	}
 
 }
