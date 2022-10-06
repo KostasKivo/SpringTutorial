@@ -24,3 +24,5 @@ Servers
 !/spring-demo-aop/src
 /spring-demo-aop-pointcut-declarations/*
 !/spring-demo-aop-pointcut-declarations/src
+/mymavenapp
+/mywebapp
