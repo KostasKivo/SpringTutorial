@@ -26,3 +26,6 @@ Servers
 !/spring-demo-aop-pointcut-declarations/src
 /mymavenapp
 /mywebapp
+/spring-security-demo/*
+!/spring-security-demo/src
+*.DS_Store
