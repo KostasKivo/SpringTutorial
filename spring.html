@@ -759,56 +759,66 @@
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>CSRF protection</h3>
+    <p>Spring security provides protection from CSRF or cross site request forgery.
+      The CSRF is added by default with Spring's form:form</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Spring Security JDBC connection</h3>
+    <p>1. Create the Database <br> 2. Update Maven pom <br> 3. Add JDBC properties files <br>
+      4. Define DataSource <br> 4. Read the props file <br> 5. Configure the DataSource <br>
+      6. Add JDBC Authentication</p>
+    <br>
+  </div>
+
+  <h2>21. Spring REST</h2>
+
+  <div class="container">
+    <h3>JSON Data Binding</h3>
+    <p>Data binding is the process of converting from one format to another.
+      In our case a JSON object to a Java POJO. It's also called mapping, serialization, deserialization, marshalling</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>How Data Binding happens in Spring?</h3>
+    <p>Spring uses the Jackson Project to handle the data binding between JSON and Java POJO</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What is @RestController annotation</h3>
+    <p>RestController annotation is a class type annotation that is a specialized version of @Controllers
+      indicating a REST web service.</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What does @Path variable do?</h3>
+    <p>It binds the controller request param with the method's parameter.
+     For example, when a request comes in for /owners/fred, the value of ..(@PathVariable String ownerId) is fred.</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What is @ExceptionHandler</h3>
+    <p>We make use of this annotation for methods which handle the type of exception we give as parameter</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>What is @ControllerAdvice</h3>
+    <p>It basically adds a new layer on our application, after the client and before the rest service layers.
+      We do that for global exception handling which allows to handle exceptions across the whole application in one global handling component.</p>
     <br>
   </div>
 
   <div class="container">
-    <h3></h3>
-    <p></p>
-    <br>
-  </div>
-
-  <div class="container">
-    <h3></h3>
-    <p></p>
+    <h3>Global Exception Handling with Advice - Development Process</h3>
+    <p>1. Create new @ControllerAdvice <br> 2. Refactor REST service, remove exception handling code <br>
+      3. Add Exception handling code to @ControllerAdvice</p>
     <br>
   </div>
 
