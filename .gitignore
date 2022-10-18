@@ -31,3 +31,5 @@ Servers
 /spring-security-demo-03-custom-login-form/
 /spring-crm-rest-demo/
 *.DS_Store
+/*/.gitignore
+/*/*mvn*
