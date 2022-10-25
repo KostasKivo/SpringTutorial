@@ -33,3 +33,4 @@ Servers
 *.DS_Store
 /*/.gitignore
 /*/*mvn*
+/*/src/test
